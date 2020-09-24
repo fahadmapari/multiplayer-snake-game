@@ -3,5 +3,5 @@
 ## live app
 https://multiplayer-snakegame.herokuapp.com/
 
-##single player version
+## single player version
 https://snakegameinjs.netlify.app
