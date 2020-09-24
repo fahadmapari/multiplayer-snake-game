@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: url("./bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.initialScreen {
+  background: whitesmoke;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  padding: 4rem 0rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.initialScreen h1 {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.initialScreen h1 img {
+  margin-left: 25px;
+}
+
+.divider {
+  margin: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#gameCodeInput {
+  width: 100%;
+  text-align: center;
+}
+
+#gameScreen {
+  display: none;
+}
+
+.gamecode {
+  background: whitesmoke;
+  border-radius: 25px;
+  padding: 1.2rem;
+}
+
+#gameCodeDisplay {
+  background: lightgrey;
+  border-radius: 25px;
+  padding: 0.4rem 1rem;
+}
+
+.copybutton svg {
+  width: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+#canvas {
+  position: relative;
+  border: 8px solid #6b2200;
+}
+
+canvas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 110%;
+  height: 110%;
+  background: url("https://i.pinimg.com/originals/64/ae/69/64ae699966022a58661ccb1990fea030.jpg");
+  z-index: 2;
+}
+
+/* display msg */
+
+.message {
+  display: table;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 2rem;
+  padding: 0.2rem 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.message-green {
+  background-color: #26d0ff;
+}
+
+.message-red {
+  background-color: #fa1111;
+  color: white;
+}
